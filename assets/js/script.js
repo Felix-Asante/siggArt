@@ -9,10 +9,14 @@ function initPreload(){
         preload.pointerEvents='none'
         preload.zIndex=-10
         header.display='block'
+        // document.getElementById('gallery-1').style.display='block';
+        // document.getElementById('time-line').style.display='block';
         setTimeout(()=>{
             header.clipPath='circle(100%)'
             header.opacity=1
-            document.getElementById('gallery-1').style.opacity=1;
+            // document.getElementById('gallery-1').style.opacity=1;
+            document.getElementById('time-line').style.opacity=1;
+            document.getElementById('gallery-section-2').style.opacity=1;
         },50)
         
     },5000)
@@ -22,10 +26,10 @@ function initPreload(){
 initPreload()
 
 // =========SCROLL GALLERY SECTION1============
-const galleryText = document.querySelector('.gallery-text').style;
-const bigImage = document.querySelector('.big-img').style
-const siggAnimated = document.querySelector('.sigg')
-const galleryWord = document.querySelector('.gallery-word').style
+// const galleryText = document.querySelector('.gallery-text').style;
+// const bigImage = document.querySelector('.big-img').style
+// const siggAnimated = document.querySelector('.sigg')
+// const galleryWord = document.querySelector('.gallery-word').style
 
 window.addEventListener('scroll',scrollPoint)
 
@@ -34,14 +38,14 @@ function scrollPoint(){
     // if(window.scrollY == 186){
     //     galleryText.transform='translate(0,0)'
     // }
-    if(window.scrollY >= 210){
-        siggAnimated.classList.add('animate')
-        galleryWord.opacity=1;
+    // if(window.scrollY >= 210){
+    //     siggAnimated.classList.add('animate')
+    //     galleryWord.opacity=1;
 
-        bigImage.opacity=1;
-        bigImage.width='458px'
+    //     bigImage.opacity=1;
+    //     bigImage.width='458px'
 
-    }
+    // }
      if(window.scrollY >= 1000){
          let photoGallery =document.querySelector('.gallery-photos').style.opacity=1;
         //  photoGallery.classList.add('show')
