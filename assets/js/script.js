@@ -19,7 +19,7 @@ function initPreload(){
             document.getElementById('gallery-section-2').style.opacity=1;
         },50)
         
-    },1000)
+    },5000)
     
 }
 
