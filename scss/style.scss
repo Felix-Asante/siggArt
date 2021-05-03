@@ -25,6 +25,13 @@ video{
     transition: opacity .6s;
     background-attachment: fixed;
     z-index: 20;
+    @media screen and(max-width:768px) {
+        height: 70vh;
+    }
+    @media screen and(max-width:320px) {
+       height: 100vh;
+}
+    // 
     &::before{
         position: absolute;
         content: '';
@@ -54,6 +61,10 @@ video{
                     height: 60px;
                     display: block;
                     margin-top: 14px;
+                    @media screen and(max-width:600px) {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
             }
             .nav-link{
@@ -157,6 +168,12 @@ video{
                    font-size: 55px;
                    width: 100%;
                  }
+                 @media screen and(max-width:754px){
+                     font-size: 50px;
+                 }
+                 @media screen and(max-width:600px) {
+                    font-size: 25px;
+                }
             }
 
             .typing{
@@ -169,6 +186,15 @@ video{
                 @media screen and(max-width:990px) {
                     font-size: 35px;
                   }
+                @media screen and(max-width:850px) {
+                    font-size: 30px;
+                  }
+                @media screen and(max-width:780px) {
+                    font-size: 27px;
+                  }
+                  @media screen and(max-width:600px) {
+                    font-size: 18px;
+                }
             }
             .btn{
                 // display: inline-block;
@@ -185,6 +211,23 @@ video{
                 @media screen and(max-width:1095px) {
                     width: 50%;
                 }
+                @media screen and(max-width:1029px) {
+                    top: 76%;
+                  }
+                  @media  screen and(max-width:775px) {
+                      top: 70%;
+                  }
+                  @media screen and(max-width:600px) {
+                        width: 90%;
+            
+                }
+                @media screen and(max-width:360px) {
+                   padding: 8px;
+            }
+                @media screen and(max-width:320px) {
+                  top: 60%;
+                  font-size: 1rem;
+            }
                 &:hover{
                     transition: transform 0.4s linear;
                     transform: scale(0.97);
@@ -323,6 +366,9 @@ video{
    @media screen and(max-width:1080px) {
    height: 160vh;
 }
+@media screen and(max-width:1079px) {
+   height: 140vh;
+  }
 //    display: none;
     // z-index: 90;
     .container{
@@ -394,6 +440,20 @@ video{
     z-index: 20;
     background: url('../assets/img/timeline/CF051136.jpg') no-repeat center center/cover;
     background-attachment: fixed;
+    @media screen and(max-width:768px) {
+        height: 100vh;
+    }
+    @media screen and(max-width:600px) {
+        height: 120vh;
+    }
+    @media screen and(max-width:368px) {
+        height: 130vh;
+    }
+    @media screen and(max-width:368px) {
+        height: 150vh;
+       
+    }
+
     &::before{
         position: absolute;
         content: '';
@@ -412,6 +472,11 @@ video{
         background: $dark;
         width: 40%;
         padding: 5px;
+
+        @media screen and(max-width:600px) {
+            width: 90%;
+            font-size: 2rem;
+        }
     }
     ul{
         // background: $white;
@@ -423,9 +488,22 @@ video{
             margin: 0 23rem;
             padding-top: 50px;
             background: $yellow;
-            @media screen and(max-width:990px) {
+            @media screen and(max-width:1010px) {
                 margin: 0 20rem;
               }
+            @media screen and(max-width:925px) {
+                margin: 0 15rem;
+              }
+            @media screen and(max-width:860px) {
+                margin: 0 10rem;
+              }
+              
+              @media screen and(max-width:600px) {
+                  margin: 0 2rem;
+              }
+              @media screen and(max-width:320px) {
+                margin: 0 1rem;
+            }
             &>div{
                 position: relative;
                 bottom: 0;
@@ -436,6 +514,12 @@ video{
                 color: $dark;
                 visibility: hidden;
                 opacity: 0;
+                @media screen and(max-width:600px) {
+                   width:250px;
+                }
+                @media screen and(max-width:600px) {
+                    width: 200px;
+                }
 
                 h3{
                     color: $dark;

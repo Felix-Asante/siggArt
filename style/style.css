@@ -49,6 +49,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .animate .sigg-text {
   position: relative;
 }
@@ -141,6 +147,18 @@ video {
   z-index: 20;
 }
 
+@media screen and (max-width: 768px) {
+  #main-header-section {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #main-header-section {
+    height: 100vh;
+  }
+}
+
 #main-header-section::before {
   position: absolute;
   content: '';
@@ -184,6 +202,13 @@ video {
   height: 60px;
   display: block;
   margin-top: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  #main-header-section .container .links .brand-logo img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 #main-header-section .container .links .nav-link {
@@ -321,6 +346,18 @@ video {
   }
 }
 
+@media screen and (max-width: 754px) {
+  #main-header-section .container .welcome-text h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-header-section .container .welcome-text h1 {
+    font-size: 25px;
+  }
+}
+
 #main-header-section .container .welcome-text .typing {
   font-size: 40px;
   color: #fedf3f;
@@ -335,6 +372,24 @@ video {
 @media screen and (max-width: 990px) {
   #main-header-section .container .welcome-text .typing {
     font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #main-header-section .container .welcome-text .typing {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #main-header-section .container .welcome-text .typing {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-header-section .container .welcome-text .typing {
+    font-size: 18px;
   }
 }
 
@@ -356,6 +411,37 @@ video {
 @media screen and (max-width: 1095px) {
   #main-header-section .container .welcome-text .btn {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1029px) {
+  #main-header-section .container .welcome-text .btn {
+    top: 76%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  #main-header-section .container .welcome-text .btn {
+    top: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main-header-section .container .welcome-text .btn {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #main-header-section .container .welcome-text .btn {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #main-header-section .container .welcome-text .btn {
+    top: 60%;
+    font-size: 1rem;
   }
 }
 
@@ -467,6 +553,12 @@ video {
   }
 }
 
+@media screen and (max-width: 1079px) {
+  #gallery-section-2 {
+    height: 140vh;
+  }
+}
+
 #gallery-section-2 .container nav .gallery-nav {
   padding-top: 3rem;
   display: -webkit-box;
@@ -565,6 +657,30 @@ video {
   background-attachment: fixed;
 }
 
+@media screen and (max-width: 768px) {
+  #time-line {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #time-line {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  #time-line {
+    height: 130vh;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  #time-line {
+    height: 150vh;
+  }
+}
+
 #time-line::before {
   position: absolute;
   content: '';
@@ -586,6 +702,13 @@ video {
   padding: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  #time-line h1 {
+    width: 90%;
+    font-size: 2rem;
+  }
+}
+
 #time-line ul li {
   position: relative;
   width: 6px;
@@ -594,9 +717,33 @@ video {
   background: #fedf3f;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1010px) {
   #time-line ul li {
     margin: 0 20rem;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  #time-line ul li {
+    margin: 0 15rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #time-line ul li {
+    margin: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #time-line ul li {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #time-line ul li {
+    margin: 0 1rem;
   }
 }
 
@@ -611,6 +758,18 @@ video {
   color: #333333;
   visibility: hidden;
   opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #time-line ul li > div {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #time-line ul li > div {
+    width: 200px;
+  }
 }
 
 #time-line ul li > div h3 {
