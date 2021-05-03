@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 12px 15px;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.animate .sigg-text {
+  position: relative;
+}
+
+.animate .sigg-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fedf3f;
+  -webkit-text-stroke: 1px #fedf3f;
+  overflow: hidden;
+  -webkit-animation: wipe 6s linear;
+          animation: wipe 6s linear;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.animate .sigg-text .art::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 157.5px;
+  width: 100%;
+  height: 100%;
+  color: #fedf3f;
+  -webkit-text-stroke: 1px #fedf3f;
+  overflow: hidden;
+  -webkit-animation: wipe 6s linear;
+          animation: wipe 6s linear;
+}
+
+.animate .sigg-text .residency::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fedf3f;
+  -webkit-text-stroke: 1px #fedf3f;
+  overflow: hidden;
+  -webkit-animation: wipe 6s linear;
+          animation: wipe 6s linear;
+}
+
+@-webkit-keyframes wipe {
+  0%, 10% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+
+@keyframes wipe {
+  0%, 10% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+
+video {
+  width: 500px;
+  height: 300px;
+  display: block;
+  margin: 100px auto 0 auto;
+}
+
+#main-header-section {
+  position: relative;
+  background: url("../assets/img/Gallery/premises/premise-3.jpg") no-repeat center center/cover;
+  height: 100vh;
+  opacity: 0;
+  display: none;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  -webkit-transition: -webkit-clip-path .4s;
+  transition: -webkit-clip-path .4s;
+  transition: clip-path .4s;
+  transition: clip-path .4s, -webkit-clip-path .4s;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+  background-attachment: fixed;
+  z-index: 20;
+}
+
+#main-header-section::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  opacity: 0.9;
+  z-index: -20;
+}
+
+#main-header-section .container {
+  height: 100%;
+}
+
+#main-header-section .container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-header-section .container .links .brand-logo img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-top: 14px;
+}
+
+#main-header-section .container .links .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 30px;
+}
+
+#main-header-section .container .links .nav-link a {
+  font-weight: 700;
+  color: #ffff;
+}
+
+#main-header-section .container .welcome-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 55%;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+#main-header-section .container .welcome-text h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  width: 80%;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+#main-header-section .container .welcome-text .typing {
+  font-size: 40px;
+  color: #fedf3f;
+}
+
+#main-header-section .container .welcome-text .btn {
+  background: #fedf3f;
+  color: #333333;
+  width: 30%;
+  position: absolute;
+  top: 73%;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+#main-header-section .container .welcome-text .btn:hover {
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+#gallery-1 {
+  background: #333333;
+  color: #ffff;
+  height: 90vh;
+  padding: 5rem 0;
+  opacity: 0;
+  background-attachment: fixed;
+}
+
+#gallery-1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15rem;
+}
+
+#gallery-1 .container .gallery-text {
+  margin: 3rem 0 0 0;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+#gallery-1 .container .gallery-text .sigg .sigg-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #333333;
+  -webkit-text-stroke: 1px #989a9b;
+  position: relative;
+  line-height: 1.1;
+}
+
+@keyframes wipe {
+  0%, 10% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+}
+
+#gallery-1 .container .gallery-text img {
+  height: 200px;
+  opacity: 0.7;
+  width: 400px;
+  position: absolute;
+  left: -80px;
+  top: 25%;
+  display: block;
+}
+
+#gallery-1 .container .gallery-text p {
+  font-size: 3.2rem;
+  margin: .5rem 0 0  0;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  -webkit-transition-delay: 0.6;
+          transition-delay: 0.6;
+  opacity: 0;
+}
+
+#gallery-1 .container .image-1 {
+  position: relative;
+}
+
+#gallery-1 .container .image-1 .big-img {
+  width: 9px;
+  height: 400px;
+  opacity: 0;
+  -webkit-transition: opacity .3s linear, width 0.5s ease-in-out;
+  transition: opacity .3s linear, width 0.5s ease-in-out;
+}
+
+#gallery-1 .container .image-1 .bottom-dot {
+  width: 450px;
+  position: absolute;
+  right: -25%;
+  bottom: -52%;
+}
+
+#gallery-section-2 {
+  height: 124vh;
+  width: 100vw;
+  background: #fedf3f;
+}
+
+#gallery-section-2 .container nav .gallery-nav {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gallery-section-2 .container nav .gallery-nav span {
+  background: #333333;
+  color: #ffff;
+  border-radius: 30px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#gallery-section-2 .container .gallery-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+#gallery-section-2 .container .gallery-photos .image {
+  width: calc(100% / 4);
+}
+
+#gallery-section-2 .container .gallery-photos .image img {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  -webkit-animation: animateImageshow 0.4s ease;
+          animation: animateImageshow 0.4s ease;
+}
+
+@-webkit-keyframes animateImageshow {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animateImageshow {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
