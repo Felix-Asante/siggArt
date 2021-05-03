@@ -38,11 +38,17 @@ video{
     }
     .container{
         height: 100%;
+        // position: relative;
         .links{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and(max-width:1063px) {
+                padding: 0 3rem;
+            }
             .brand-logo{
+                z-index: 60;
+
                 img{
                     width: 60px;
                     height: 60px;
@@ -54,10 +60,80 @@ video{
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                gap: 30px;
+                .main-links{
+                    display: flex;
+                    gap: 30px;
+                    z-index: 30;
+                    transition: all 0.4s linear;
+                    @media screen and(max-width:1063px) {
+                        display: none;
+                    }
+                }
+
+                .links-active{
+                    // @media screen and(max-width:1063px) {
+                        display: block;
+                        flex-direction: column;
+                        align-content: center;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100vw;
+                        padding: 2rem 0;
+                        align-items: center;
+                        background: rgba(254, 223, 63,0.5);
+                        color: $dark;
+                        transition: all 0.4s linear;
+                        gap: 30px;
+
+                        a{
+                            
+                                font-weight: 900;
+                                color: $dark;
+                                width: 50%;
+                                text-align: center;
+                                padding: 12px 0;
+                                transition: all 0.4s linear;
+                                display: block;
+                                margin: 0 auto;
+                                // width: 500px;
+                                &:hover{
+                                    
+                                    background: $dark;
+                                    transition: all 0.4s linear;
+                                    color: $white;
+                                
+                            }
+                        }
+                    
+                }
                 a{
                     font-weight: 700;
+                    display: block;
                     color: $white;
+                    
+                }
+                .button{
+                    width: 40px;
+                    background: $dark;
+                    height: 30px;
+                    padding: 5px;
+                    text-align: center;
+                    vertical-align: middle;
+                    display: none;
+                    z-index: 60;
+                    cursor: pointer;
+                    @media screen and(max-width:1063px) {
+                        display: block;
+                    }
+
+                    .line{
+                        width: 100%;
+                        height: 3px;
+                        background: $white;
+                        display: block;
+                        margin-bottom: 5px;
+                    }
                 }
             }
 
@@ -77,12 +153,22 @@ video{
                 width: 80%;
                 margin-bottom: 16px;
                 font-weight: 700;
+                @media screen and(max-width:990px) {
+                   font-size: 55px;
+                   width: 100%;
+                 }
             }
 
             .typing{
                 font-size: 40px;
                 color: $yellow;
                 // display: block;
+                @media screen and (max-width:1063px) {
+                    width: 90%;
+                }
+                @media screen and(max-width:990px) {
+                    font-size: 35px;
+                  }
             }
             .btn{
                 // display: inline-block;
@@ -96,6 +182,9 @@ video{
                 font-weight: 700;
                 font-size: 1.3rem;
                 transition: transform 0.4s linear;
+                @media screen and(max-width:1095px) {
+                    width: 50%;
+                }
                 &:hover{
                     transition: transform 0.4s linear;
                     transform: scale(0.97);
@@ -231,9 +320,13 @@ video{
     width: 100vw;
     background: $yellow;
    opacity: 0;
+   @media screen and(max-width:1080px) {
+   height: 160vh;
+}
 //    display: none;
     // z-index: 90;
     .container{
+        
         nav{
             .gallery-nav{
                 padding-top: 3rem;
@@ -256,11 +349,18 @@ video{
             margin-top: 2rem;
             // display: grid;
             // grid-template-columns: repeat(4,1fr);
+            @media screen and(max-width:1080px) {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                padding: 0 2rem;
+            }
             opacity: 0;
             transition: opacity 1s linear;
             .image{
                 width: calc(100% / 4);
-                
+                @media screen and(max-width:1080px) {
+                    width: 100%;
+                }
                 img{
                     width: 100%;
                     // height: 250.67px;
@@ -320,9 +420,12 @@ video{
         li{
             position: relative;
             width: 6px;
-            margin: 0 auto;
+            margin: 0 23rem;
             padding-top: 50px;
             background: $yellow;
+            @media screen and(max-width:990px) {
+                margin: 0 20rem;
+              }
             &>div{
                 position: relative;
                 bottom: 0;
@@ -352,7 +455,7 @@ video{
                 }
 
             }
-            &:nth-child(odd) div{
+            & div{
                 left: 40px;
                 transform: translate(200px,0);
                 
@@ -362,15 +465,15 @@ video{
                     border-color: transparent $white;
                 }
             }
-            &:nth-child(even) div{
-                left: -434px;
-                transform: translate(-200px,0);
-                &:before{
-                    right: -15px;
-                    border-width: 8px 0 8px 16px;
-                    border-color: transparent $white;
-                }
-            }
+            // &:nth-child(even) div{
+            //     left: -434px;
+            //     transform: translate(-200px,0);
+            //     &:before{
+            //         right: -15px;
+            //         border-width: 8px 0 8px 16px;
+            //         border-color: transparent $white;
+            //     }
+            // }
             &:after {
                 content: '';
                 position: absolute;

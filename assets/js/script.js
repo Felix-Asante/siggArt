@@ -19,7 +19,7 @@ function initPreload(){
             document.getElementById('gallery-section-2').style.opacity=1;
         },50)
         
-    },5000)
+    },1000)
     
 }
 
@@ -50,6 +50,21 @@ function scrollPoint(){
          let photoGallery =document.querySelector('.gallery-photos').style.opacity=1;
         //  photoGallery.classList.add('show')
     }
+    
+}
+// grid gallery
+window.addEventListener('resize',gallerygrid)
+window.addEventListener('load',gallerygrid)
+function gallerygrid(){
+  if(window.innerWidth >=1080){
+    console.log('point')
+    document.querySelector('.residence-7').classList.remove('hide')
+    document.querySelector('.residence-4').classList.remove('hide')
+  }
+  else{
+    document.querySelector('.residence-7').classList.add('hide')
+    document.querySelector('.residence-4').classList.add('hide')
+  }
 }
 
 // ============Gallery filter==============
@@ -76,3 +91,13 @@ window.onload = ()=>{ //after window loaded
       }
     }
 }
+
+
+// ========MENU TOGGLE=========
+const links = document.querySelector('.main-links')
+const menu = document.querySelector('.button')
+
+menu.addEventListener('click',()=>{
+  console.log('menu')
+  links.classList.toggle('links-active')
+})
