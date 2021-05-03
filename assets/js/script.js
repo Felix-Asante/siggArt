@@ -15,7 +15,7 @@ function initPreload(){
             document.getElementById('gallery-1').style.opacity=1;
         },50)
         
-    },1000)
+    },5000)
     
 }
 
